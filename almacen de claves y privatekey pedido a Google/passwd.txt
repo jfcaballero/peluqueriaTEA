@@ -1,4 +1,0 @@
-"peluqueriaTEA" tanto para el almacen como para el alias, que es "key0"
-
-keystore.jks -> Almacen de claves
-private_key.pepk -> Clave generada por Android Studio. Creo que no sirve para las actualizaciones, sino para una vez que se sube unirse al "programa de firmas de Google".
