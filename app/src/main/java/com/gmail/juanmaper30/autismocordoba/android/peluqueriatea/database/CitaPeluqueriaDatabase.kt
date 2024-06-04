@@ -6,10 +6,15 @@ import androidx.room.TypeConverters
 import com.gmail.juanmaper30.autismocordoba.android.peluqueriatea.modulo_5.CitaPeluqueria
 
 @Database(entities = [CitaPeluqueria::class], version = 1, exportSchema = false)
+//@Database(entities = [CitaPeluqueria::class], version = 1, exportSchema = true)
+/*@Database(
+    entities = [CitaPeluqueria::class],
+    autoMigrations = [AutoMigration(from = 1, to = 2)],
+    exportSchema = true,
+    version = 2,
+    )
+ */
 @TypeConverters(CitaPeluqueriaTypeConverters::class)
 abstract class CitaPeluqueriaDatabase : RoomDatabase() {
-
-
     abstract fun citaPeluqueriaDao(): CitaPeluqueriaDao
-    
 }

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gmail.juanmaper30.autismocordoba.android.peluqueriatea">
-
+    android:versionCode="2">
     <application
         android:name=".PeluTEAApplication"
         android:allowBackup="true"
@@ -10,7 +9,8 @@
         android:roundIcon="@mipmap/ic_icono_app_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:configChanges="orientation">
+        <activity android:name=".MainActivity" android:configChanges="orientation"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,5 +18,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
